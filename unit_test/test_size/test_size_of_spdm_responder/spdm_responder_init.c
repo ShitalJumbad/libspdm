@@ -25,9 +25,8 @@ libspdm_return_t spdm_responder_receive_message(void *spdm_context,
 
 uint8_t m_scratch_buffer[LIBSPDM_SCRATCH_BUFFER_SIZE];
 
-bool m_send_receive_buffer_acquired = false;
-uint8_t m_send_receive_buffer[LIBSPDM_MAX_SENDER_RECEIVER_BUFFER_SIZE];
-size_t m_send_receive_buffer_size;
+static bool m_send_receive_buffer_acquired = false;
+static uint8_t m_send_receive_buffer[LIBSPDM_MAX_SENDER_RECEIVER_BUFFER_SIZE];
 
 libspdm_return_t spdm_device_acquire_sender_buffer (
     void *context, void **msg_buf_ptr)

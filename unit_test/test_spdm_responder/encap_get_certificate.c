@@ -20,7 +20,7 @@ spdm_certificate_response_t m_spdm_get_certificate_response2 = {
     0,
     0
 };
-size_t m_spdm_get_certificate_response2_size = sizeof(m_spdm_get_certificate_response2);
+static size_t m_spdm_get_certificate_response2_size = sizeof(m_spdm_get_certificate_response2);
 
 /**
  * Test 1: Normal case, request a certificate chain

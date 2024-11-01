@@ -14,37 +14,37 @@ spdm_key_update_request_t m_libspdm_key_update_request1 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE,
       SPDM_KEY_UPDATE_OPERATIONS_TABLE_UPDATE_KEY, 0x3 }
 };
-size_t m_libspdm_key_update_request1_size = sizeof(m_libspdm_key_update_request1);
+static size_t m_libspdm_key_update_request1_size = sizeof(m_libspdm_key_update_request1);
 
 spdm_key_update_request_t m_libspdm_key_update_request2 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE,
       SPDM_KEY_UPDATE_OPERATIONS_TABLE_UPDATE_KEY, 0x3 }
 };
-size_t m_libspdm_key_update_request2_size = LIBSPDM_MAX_SPDM_MSG_SIZE;
+static size_t m_libspdm_key_update_request2_size = LIBSPDM_MAX_SPDM_MSG_SIZE;
 
 spdm_key_update_request_t m_libspdm_key_update_request3 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE,
       SPDM_KEY_UPDATE_OPERATIONS_TABLE_UPDATE_ALL_KEYS, 0x71 }
 };
-size_t m_libspdm_key_update_request3_size = sizeof(m_libspdm_key_update_request3);
+static size_t m_libspdm_key_update_request3_size = sizeof(m_libspdm_key_update_request3);
 
 spdm_key_update_request_t m_libspdm_key_update_request4 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE,
       SPDM_KEY_UPDATE_OPERATIONS_TABLE_UPDATE_ALL_KEYS, 0x71 }
 };
-size_t m_libspdm_key_update_request4_size = LIBSPDM_MAX_SPDM_MSG_SIZE;
+static size_t m_libspdm_key_update_request4_size = LIBSPDM_MAX_SPDM_MSG_SIZE;
 
 spdm_key_update_request_t m_libspdm_key_update_request5 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE,
       SPDM_KEY_UPDATE_OPERATIONS_TABLE_VERIFY_NEW_KEY, 0x4A }
 };
-size_t m_libspdm_key_update_request5_size = sizeof(m_libspdm_key_update_request5);
+static size_t m_libspdm_key_update_request5_size = sizeof(m_libspdm_key_update_request5);
 
 spdm_key_update_request_t m_libspdm_key_update_request6 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE,
       SPDM_KEY_UPDATE_OPERATIONS_TABLE_VERIFY_NEW_KEY, 0x4A }
 };
-size_t m_libspdm_key_update_request6_size = LIBSPDM_MAX_SPDM_MSG_SIZE;
+static size_t m_libspdm_key_update_request6_size = LIBSPDM_MAX_SPDM_MSG_SIZE;
 
 spdm_key_update_request_t m_libspdm_key_update_request7 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE,
@@ -67,7 +67,7 @@ size_t m_libspdm_key_update_request9_size = sizeof(m_libspdm_key_update_request9
 spdm_key_update_request_t m_libspdm_key_update_request10 = {
     { SPDM_MESSAGE_VERSION_11, SPDM_KEY_UPDATE, 0xFF, 0x12 }
 };
-size_t m_libspdm_key_update_request10_size = sizeof(m_libspdm_key_update_request10);
+static size_t m_libspdm_key_update_request10_size = sizeof(m_libspdm_key_update_request10);
 
 static void libspdm_set_standard_key_update_test_state(
     libspdm_context_t *spdm_context, uint32_t *session_id)
